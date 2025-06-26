@@ -9,11 +9,7 @@ CORS(app) # Inicializa CORS con tu aplicación Flask.
           # En producción, querrías restringirlo a tu dominio.
 
 # Configuración de la conexión a la base de datos
-DB_HOST = "190.114.255.100" # O la IP/dominio de tu servidor de DB
-DB_NAME = "proalto"
-DB_USER = "monsalve"
-DB_PASS = "m0ns@lv301"
-doc_id = "10005"
+
 
 def get_db_connection():
     conn = psycopg2.connect(host=DB_HOST, database=DB_NAME, user=DB_USER, password=DB_PASS)
